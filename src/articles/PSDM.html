@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        /* body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .article-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        } */
+        .podcast-card {
+            border-left: 4px solid #6610f2;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #f9f6ff;
+            transition: all 0.3s ease;
+        }
+        .podcast-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 16, 242, 0.1);
+        }
+        .podcast-title {
+            color: #6610f2;
+            margin-bottom: 15px;
+        }
+        .podcast-platform {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .category-badge {
+            background-color: #6610f2;
+            color: white;
+        }
+        .source-link {
+            color: #6610f2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        .intro-block {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html">
+                  <img class="img-fluid" src="../icons/logo.svg" alt="" width="50px" height="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc" aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="nav_lc">
+                  <ul class="d-none d-lg-flex navbar-nav mx-auto my-3 my-lg-0 position-absolute top-50 start-50 translate-middle">
+                      <li class="nav-item me-4"><a class="nav-link" href="../../index.html">Главная</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../articles-main.html">Статьи</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../courses-main.html">Курсы</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../resources-main.html">Ресурсы</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../tools-main.html">Инструменты</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../about-us.html">О нас</a></li>
+                  </ul>
+                  <ul class="navbar-nav my-3 my-lg-0 d-lg-none">
+                      <li class="nav-item me-4"><a class="nav-link" href="../../index.html">Главная</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../articles-main.html">Статьи</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../courses-main.html">Курсы</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../resources-main.html">Ресурсы</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../tools-main.html">Инструменты</a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="../../about-us.html">О нас</a></li>
+                  </ul>
+                  <div class="ms-lg-auto"><a class="btn btn-outline-primary me-2" href="#">Sign In</a><a class="btn btn-primary" href="#">Sign Up</a></div>
+              </div>
+          </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="article-container">
+            <h1 class="mb-4">Лучшие подкасты об образовании, EdTech и корпоративном обучении (март 2025)</h1>
+            
+            <div class="intro-block">
+                <p><strong>Источник:</strong> <a href="https://skillbox.ru/media/education/podkasty-ob-obrazovanii-edtech-i-korporativnom-obuchenii-mart-2025-go/" class="source-link" target="_blank">Skillbox Media</a></p>
+                <p>Актуальная подборка образовательных подкастов, которые помогут быть в курсе последних трендов цифрового обучения и корпоративного образования.</p>
+            </div>
+
+            <h3 class="mt-5 mb-4">Русскоязычные подкасты</h3>
+
+            <div class="podcast-card">
+                <h3 class="podcast-title">1. EdTech Разбор</h3>
+                <span class="badge category-badge mb-2">EdTech</span>
+                <p>Анализ новых образовательных технологий и интервью с основателями стартапов в сфере обучения.</p>
+                <p><strong>Хост:</strong> Алексей Полехин</p>
+                <p><strong>Популярные выпуски:</strong></p>
+                <ul>
+                    <li>Как нейросети изменят проверку домашних заданий</li>
+                    <li>VR-лаборатории: будущее практического обучения</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="podcast-platform">Apple Podcasts</span>
+                    <span class="podcast-platform">Яндекс Музыка</span>
+                    <span class="podcast-platform">SoundCloud</span>
+                </div>
+            </div>
+
+            <div class="podcast-card">
+                <h3 class="podcast-title">2. Учись Учиться</h3>
+                <span class="badge category-badge mb-2">Методики обучения</span>
+                <p>Разбор эффективных техник запоминания и освоения сложных навыков.</p>
+                <p><strong>Хост:</strong> Мария Ковалева</p>
+                <p><strong>Популярные выпуски:</strong></p>
+                <ul>
+                    <li>Как учить 3 языка одновременно и не сойти с ума</li>
+                    <li>Нейробиология обучения: что действительно работает</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="podcast-platform">Spotify</span>
+                    <span class="podcast-platform">Google Podcasts</span>
+                </div>
+            </div>
+
+            <h3 class="mt-5 mb-4">Международные подкасты</h3>
+
+            <div class="podcast-card">
+                <h3 class="podcast-title">3. The EdTech Podcast</h3>
+                <span class="badge category-badge mb-2">Global EdTech</span>
+                <p>Ведущий подкаста об образовательных технологиях с мировыми экспертами.</p>
+                <p><strong>Хост:</strong> Sophie Bailey</p>
+                <p><strong>Язык:</strong> Английский</p>
+                <p><strong>Популярные выпуски 2025:</strong></p>
+                <ul>
+                    <li>Blockchain in Education: Beyond Credentials</li>
+                    <li>AI Tutors: Threat or Opportunity for Teachers?</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="podcast-platform">Spotify</span>
+                    <span class="podcast-platform">Apple Podcasts</span>
+                </div>
+            </div>
+
+            <div class="podcast-card">
+                <h3 class="podcast-title">4. Learning at Scale</h3>
+                <span class="badge category-badge mb-2">Корпоративное обучение</span>
+                <p>Как крупные компании внедряют системы обучения для тысяч сотрудников.</p>
+                <p><strong>Хост:</strong> David Kelly</p>
+                <p><strong>Язык:</strong> Английский</p>
+                <p><strong>Популярные выпуски:</strong></p>
+                <ul>
+                    <li>Microlearning in Enterprise: 2025 Case Studies</li>
+                    <li>Gamification That Actually Works</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="podcast-platform">Apple Podcasts</span>
+                    <span class="podcast-platform">Web</span>
+                </div>
+            </div>
+
+            <h3 class="mt-5 mb-4">Нишевые подкасты</h3>
+
+            <div class="podcast-card">
+                <h3 class="podcast-title">5. Универ 2.0</h3>
+                <span class="badge category-badge mb-2">Высшее образование</span>
+                <p>Как меняются университеты в эпоху цифровой трансформации.</p>
+                <p><strong>Хост:</strong> Иван Смирнов и гости из вузов</p>
+                <p><strong>Популярные выпуски:</strong></p>
+                <ul>
+                    <li>Цифровые кампусы: опыт СберУниверситета</li>
+                    <li>Зачем вузам свои EdTech-стартапы</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="podcast-platform">Яндекс Музыка</span>
+                    <span class="podcast-platform">VK Подкасты</span>
+                </div>
+            </div>
+
+            <div class="card mt-4 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Ключевые тренды в подкастах 2025</h5>
+                    <ul class="card-text">
+                        <li><strong>Персонализация обучения</strong> - алгоритмы подбора контента</li>
+                        <li><strong>Иммерсивные технологии</strong> - VR/AR в образовании</li>
+                        <li><strong>Гибридные форматы</strong> - сочетание подкастов с интерактивами</li>
+                        <li><strong>Корпоративное обучение</strong> - развитие L&D-направлений</li>
+                    </ul>
+                    <p class="mb-0">Подкасты становятся важным форматом профессионального развития в сфере образования.</p>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <a href="https://skillbox.ru/media/education/podkasty-ob-obrazovanii-edtech-i-korporativnom-obuchenii-mart-2025-go/" class="source-link" target="_blank">
+                    🔗 Читать полную статью на Skillbox Media
+                </a>
+                <span class="text-muted">Актуально на март 2025</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
